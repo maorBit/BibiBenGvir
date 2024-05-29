@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=720 height=1280 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=720 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web16.loader.js";
+      var loaderUrl = buildUrl + "/web17.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web16.data.unityweb",
-        frameworkUrl: buildUrl + "/web16.framework.js.unityweb",
-        codeUrl: buildUrl + "/web16.wasm.unityweb",
+        dataUrl: buildUrl + "/web17.data.unityweb",
+        frameworkUrl: buildUrl + "/web17.framework.js.unityweb",
+        codeUrl: buildUrl + "/web17.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "BibiBenGvir",
@@ -95,7 +95,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "720px";
-        canvas.style.height = "1280px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
